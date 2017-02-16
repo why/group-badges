@@ -137,5 +137,5 @@ Where
 </tr>
 <tr>
 <td>:struct</td>
-<td>Is the badge structure that has been explained </td>
+<td>Is the badge structure that has been explained <a href="https://github.com/notmika/group-badges/blob/master/README.md#badge-structure">here</a></td>
 </tr>
