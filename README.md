@@ -17,9 +17,9 @@ Both types of badge parts are built using 1 letter and 5 digits:
 <td><b>Position</b></td>
 </tr>
 <tr>
-<td>b/s/t</td>
-<td>01-99</td>
-<td>01-24</td>
-<td>0-8</td>
+<td> b/s/t</td>
+<td> 01-99</td>
+<td> 01-24</td>
+<td> 0-8</td>
 </tr>
 </table>
