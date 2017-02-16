@@ -139,3 +139,59 @@ Where
 <td>:struct</td>
 <td>Is the badge structure that has been explained <a href="https://github.com/notmika/group-badges/blob/master/README.md#badge-structure">here</a></td>
 </tr>
+<tr>
+<td>:hash</td>
+<td>Is the result hash of <a href="#">this process</a></td>
+</tr>
+</table>
+
+### Creating a hash
+
+Before being able to create a valid badge URL, you will need to know that Habbo uses a static "secret" MD5 hash in the process. This hash will be used in combination with a badge structure to create a new hash: `ef2356a4926bf225eb86c75c52309c32`
+
+Formula for creating a valid badge URL: `BADGE_STRUCTURE + MD5(BADGE_STRUCTURE + STATIC_HASH)`
+
+Where
+<table>
+<tr>
+<td>BADGE_STRUCTURE</td>
+<td>Is the structure of the badge you want to have returned</td>
+</tr>
+<tr>
+<td>STATIC_HASH</td>
+<td>Is <code>ef2356a4926bf225eb86c75c52309c32</code></td>
+</tr>
+</table>
+
+### C# code example
+
+This is a C# console application that creates and prints a valid badge URL.
+
+```C#
+class CreateBadgeHash
+{
+    static void Main()
+    {
+        string myStructure = "b10220s06034";
+        string staticHash = "ef2356a4926bf225eb86c75c52309c32";
+
+        System.Console.WriteLine(myStructure + CreateMD5(myStructure + staticHash));
+    }
+
+    public static string CreateMD5(string input)
+    {
+        using (System.Security.Cryptography.MD5 md5 = System.Security.Cryptography.MD5.Create())
+        {
+            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
+            byte[] hashBytes = md5.ComputeHash(inputBytes);
+
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            for (int i = 0; i < hashBytes.Length; i++)
+            {
+                sb.Append(hashBytes[i].ToString("X2"));
+            }
+            return sb.ToString();
+        }
+    }
+}
+```
