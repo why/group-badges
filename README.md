@@ -141,7 +141,7 @@ Where
 </tr>
 <tr>
 <td>:hash</td>
-<td>Is the result hash of <a href="#">this process</a></td>
+<td>Is the result hash of <a href="https://github.com/notmika/group-badges/blob/master/README.md#creating-a-hash">this process</a></td>
 </tr>
 </table>
 
