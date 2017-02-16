@@ -77,3 +77,12 @@ A `Position` is a single digit that represents the position of a badge part in y
 <img src="https://www.habbo.nl/habbo-imaging/badge/s68010s69011s70012s71013s72014s73015s74016s75017s76018bdd473f066504f3341d056d5a1fb664c">
 
 A badge also has layers. That means that badge parts can overlap other badge parts. A badge part on layer 1 will overlap the part on layer 0, a part on layer 2 will overlap the one on layer 1, etc. What layer a badge part is on, is determined by the order they are in. For example, the order is like this: `[part_a][part_b]`, here, `part_a` is on layer 0, and `part_b` is on layer 1. Layers apply to any type of badge part.
+
+## Example structures
+
+### Correct structures
+
+<table>
+<tr>
+<td><b>Image</b></td>
+<td><b>Structure</b></td>
