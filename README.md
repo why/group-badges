@@ -80,7 +80,7 @@ A badge also has layers. That means that badge parts can overlap other badge par
 
 ### Example structures
 
-These lists of examples shows you how (not) to build structures for a badge.
+This list of examples demonstrates how to build structures for a badge.
 
 #### Correct structures
 <table>
@@ -120,3 +120,22 @@ These lists of examples shows you how (not) to build structures for a badge.
 <td>Completely empty structure, results into an empty badge</td>
 </tr>
 </table> 
+
+## Structure hashing
+
+Structure hashing is a more technical matter. How it works exactly is explained in this part of the documentation. A Habbo imaging URL typically looks like: `:server/habbo-imaging/:imageType/:struct:hash`
+
+Where
+<table>
+<tr>
+<td>:server</td>
+<td>Is the address of the server. For example https://www.habbo.com</td>
+</tr>
+<tr>
+<td>:imageType</td>
+<td>Is the type of image you are requesting. In this case that is 'badge'</td>
+</tr>
+<tr>
+<td>:struct</td>
+<td>Is the badge structure that has been explained </td>
+</tr>
