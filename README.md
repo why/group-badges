@@ -32,6 +32,22 @@ The main difference between `b` and `s` or `t` is that `b` can only display base
 
 There's also a slight difference between `s` and `t`. There's between 100 and 200 different additional parts available in Habbo, but a badge part only takes 5 digits, so `Badge part ID` can't be more than 99. To still use an additional part that goes above 99, we can use `t`. When `t` is set to 00, that equals `Badge part ID` 100, 10 equals `Badge part ID` 110, etc. For `Badge part ID` 1 to 99, you can use `s`.
 
-### Example structures
+### Badge part IDs
+
+A `Badge part ID` is a number that represents a certain image or shape in your badge. Base- and additional parts both have their own IDs. A few of them are displayed below.
+
+#### Base
+<table>
+<tr>
+<td><b>ID 1</b></td>
+<td><b>ID 2</b></td>
+<td><b>ID 3</b></td>
+</tr>
+<tr>
+<td><img src="https://www.habbo.nl/habbo-imaging/badge/b01010006791b2fcf18535db5c46607b2bce63"></td>
+<td><img src="https://www.habbo.nl/habbo-imaging/badge/b0201007a27a440faa05d1e488ff92a078cbaa"></td>
+<td><img src="https://www.habbo.nl/habbo-imaging/badge/b03010ddcf06faef8477d20f896d364a201fd5"></td>
+</tr>
+</table>
 
 
