@@ -80,9 +80,34 @@ A badge also has layers. That means that badge parts can overlap other badge par
 
 ### Example structures
 
-#### Correct structures
+These lists of examples shows you how (not) to build structures for a badge.
 
+#### Correct structures
 <table>
 <tr>
 <td><b>Image</b></td>
 <td><b>Structure</b></td>
+<td><b>Explained</b></td>
+</tr>
+<tr>
+<td><img src="https://www.habbo.com/habbo-imaging/badge/b0312011748398e35232e4bf1ae3a8b399b947"></td>
+<td><code>b</code><code>03</code><code>12</code><code>0</code></td>
+<td>A single base part with ID 03, color 12 and position 0</td>
+</tr>
+<tr>
+<td><img src="https://www.habbo.com/habbo-imaging/badge/b01200s0610440b349c7c406fb2c9545f7f5f641fd99"></td>
+<td><code>b</code><code>01</code><code>20</code><code>0</code><code>s</code><code>06</code><code>10</code><code>4</code></td>
+<td>Base 1 with color 20 and 1 additional part with ID 6, color 10 and position 4</td>
+</tr>
+<tr>
+<td><img src="https://www.habbo.com/habbo-imaging/badge/b01200s84033s86034s970359be7b0f7040a1f694e08c7307e6feeac"></td>
+<td><code>b</code><code>01</code><code>20</code><code>0</code><code>s</code><code>84</code><code>03</code><code>3</code><code>s</code><code>86</code><code>03</code><code>4</code><code>s</code><code>97</code><code>03</code><code>5</code></td>
+<td>Same base as above, with 3 additional parts on positions 3, 4 and 5, making the word 'GIT' together</td>
+</tr>
+<tr>
+<td><img src="https://www.habbo.com/habbo-imaging/badge/b01030b030303a074ec3f2ab2adb13ee6c4e1833ad62"></td>
+<td><code>b</code><code>01</code><code>03</code><code>0</code><code>b</code><code>03</code><code>03</code><code>0</code></td>
+<td>Example of a badge with multiple base parts</td>
+</tr>
+</table> 
+<!-- TODO: base-less badge & completely empty badge -->
