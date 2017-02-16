@@ -1,4 +1,3 @@
-<img src=x onerror=alert(0)>
 # Habbo Hotel group badges
 This documentation explains how badges are structured and how they are hashed.
 
@@ -110,5 +109,14 @@ These lists of examples shows you how (not) to build structures for a badge.
 <td><code>b</code><code>01</code><code>03</code><code>0</code><code>b</code><code>03</code><code>03</code><code>0</code></td>
 <td>Example of a badge with multiple base parts</td>
 </tr>
+<tr>
+<td><img src="https://www.habbo.com/habbo-imaging/badge/s84033s86034s9703585d8e114ae901a0051837a76efb46021"></td>
+<td><code>s</code><code>84</code><code>03</code><code>3</code><code>s</code><code>86</code><code>03</code><code>4</code><code>s</code><code>97</code><code>03</code><code>5</code></td>
+<td>Same as #3, except this badge doesn't have any base parts</td>
+</tr>
+<tr>
+<td><img src="https://www.habbo.com/habbo-imaging/badge/fc6a5baf8af71b99d1ae37eb24114307"></td>
+<td><code></code></td>
+<td>Completely empty structure, results into an empty badge</td>
+</tr>
 </table> 
-<!-- TODO: base-less badge & completely empty badge -->
