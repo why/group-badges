@@ -1,7 +1,7 @@
 # Habbo Hotel group badges
 This documentation explains how badges are structured and how they are hashed.
 
-# Badge structure
+## Badge structure
 Badges typically consist of <b>0-n</b> badge parts. Badge parts are divided in 3 different types:
 - <b>b</b>: Base parts
 - <b>s</b>: Additional parts (1-99)
@@ -26,7 +26,7 @@ Both types of badge parts are built using 1 letter and 5 digits:
 
 All 3 badge parts are optional, but when a badge part is added, it <b>must</b> contain the letter and <b>exactly 5</b> digits. If your `Badge Part ID` or `Color` are below 10, add a leading 0.
 
-## The difference between types
+### The difference between types
 
 The main difference between `b` and `s` or `t` is that `b` can only display base parts, and the others can only display additional parts. It is also worth noting that a badge can contain multiple base parts.
 
