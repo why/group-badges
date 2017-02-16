@@ -32,11 +32,11 @@ The main difference between `b` and `s` or `t` is that `b` can only display base
 
 There's also a slight difference between `s` and `t`. There's between 100 and 200 different additional parts available in Habbo, but a badge part only takes 5 digits, so `Badge part ID` can't be more than 99. To still use an additional part that goes above 99, we can use `t`. When `t` is set to 00, that equals `Badge part ID` 100, 10 equals `Badge part ID` 110, etc. For `Badge part ID` 1 to 99, you can use `s`.
 
-## Badge part IDs
+### Badge part IDs
 
 A `Badge part ID` is a 2-digit number that represents a certain image or shape in your badge. Base- and additional parts both have their own IDs. A few of them are displayed below.
 
-### Base
+#### Base
 <table>
 <tr>
 <td><b>ID 1</b></td>
@@ -50,7 +50,7 @@ A `Badge part ID` is a 2-digit number that represents a certain image or shape i
 </tr>
 </table>
 
-### Additional
+#### Additional
 <table>
 <tr>
 <td><b>ID 1</b></td>
@@ -64,13 +64,13 @@ A `Badge part ID` is a 2-digit number that represents a certain image or shape i
 </tr>
 </table>
 
-## Colors
+### Colors
 
 A `Color` is a 2-digit number that represents the color of a badge part. There is 24 different colors in total. Note that not all badge parts can be colored. In that case, any number will return the same default color. An example of a non-colorable badge part is displayed below.
 
 <img src="https://www.habbo.nl/habbo-imaging/badge/t41014935ea23c7318fc7943932593160409e7"> 
 
-## Positions & Layers
+### Positions & Layers
 
 A `Position` is a single digit that represents the position of a badge part in your badge. There is 9 different possible positions (0-8), 0 being the upper left corner, 4 being the center and 8 being the bottom right corner. Some bigger badge parts will always be centered, regardless of the set position. A badge demonstrating all possible positions is displayed below.
 
@@ -78,9 +78,9 @@ A `Position` is a single digit that represents the position of a badge part in y
 
 A badge also has layers. That means that badge parts can overlap other badge parts. A badge part on layer 1 will overlap the part on layer 0, a part on layer 2 will overlap the one on layer 1, etc. What layer a badge part is on, is determined by the order they are in. For example, the order is like this: `[part_a][part_b]`, here, `part_a` is on layer 0, and `part_b` is on layer 1. Layers apply to any type of badge part.
 
-## Example structures
+### Example structures
 
-### Correct structures
+#### Correct structures
 
 <table>
 <tr>
